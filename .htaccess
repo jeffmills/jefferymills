@@ -1,0 +1,15 @@
+# Use PHP5 Single php.ini as default
+AddHandler application/x-httpd-php5s .php
+
+
+#DirectoryIndex wordpress/index.php
+# BEGIN WordPress
+
+# END WordPress
+
+<FilesMatch "\.(ttf|otf|eot)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
+
